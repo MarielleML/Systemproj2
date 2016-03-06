@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="StyleSheet.css"> 
+        <title>Biograf</title>
+		<!--jQuery drop down calendar testing->write in c# -->
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+               <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+                <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+              <link rel="stylesheet" href="/resources/demos/style.css">
+                 <script>
+                    $(function() {
+                         $( "#datepicker" ).datepicker();
+                     });
+                 </script>
+    </head>
+
+    <body>
+	<!--Container-->
+        <div id="wrapper">
+
+            <div id ="top"> 
+			<!--Header-->
+             <div id= "header">
+              <header>  
+              <img class ="headpic" src ="http://kaposvariprogramok.hu/sites/default/files/mozi_1.jpg" 
+                   alt ="Biograf" width="300px"/>   
+              <p id="title">   Biografen </p> 
+           </header>
+
+		   <!--Navigation bar-->
+                 <ul id ="navbar">
+                  <a href = "länk"> Boka biljett</a> 
+                  <a href = "index.html"> Filmschema </a>
+                  <a href = "index.html"> Lägg till film </a>
+                  <ul style="float:right;list-style-type:none;">
+                   <a href = "länk "> Konto</a>
+                   <a href="länk"> Logga in</a>
+                      </ul>
+            </div>
+
+        <div id="bottom">
+		<!--Calendar-->
+          <div class="date">  
+          <p>Datum: <br>
+          <input type="text" id="datepicker"></p>
+          </div>
+		  <!--Form to add movie-->
+            <form id="theform"> 
+               <div class="formleft">
+                <p>Titel: <br>
+                 <input type="text" name="titel"></p>
+                <p>Beskriving: <br>
+                 <textarea> </textarea></p>
+                </div>
+             
+                <div class="formright">
+                <img  src="https://camo.githubusercontent.com/f8ea5eab7494f955e90f60abc1d13f2ce2c2e540/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f323037383234352f3235393331332f35653833313336322d386362612d313165322d383435332d6536626439353663383961342e706e67" alt="bild" height="270px" width="205px"><br>
+                <button type="button">Bifoga bild</button>
+              </div>
+            
+              <div class="buttons">
+                <button id="button" type="submit">Spara</button>
+              </div>
+                </form>
+                    
+        </div>
+
+        </div>
+    </body>
+</html>

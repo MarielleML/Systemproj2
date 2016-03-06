@@ -1,0 +1,63 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Biografen</title>
+        <link rel="stylesheet" href="StyleSheet.css">         
+
+        <!--JQuery drop-down calendar, testing->write in c#-->
+         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+               <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+               <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+          <link rel="stylesheet" href="/resources/demos/style.css">
+                 
+           <script>
+                    $(function() {
+                         $( "#datepicker" ).datepicker();
+                     });
+           </script>
+  
+      
+        </head>
+
+     <body>
+<!--Container-->
+          <div id="wrapper">
+           <div id ="top"> 
+               <!--header-->
+                <div id= "header">
+                    <header>  
+                         <img class ="headPic" src ="http://kaposvariprogramok.hu/sites/default/files/mozi_1.jpg" 
+                    alt ="Biograf" width="300px"/>
+                        <p id="title">   Biografen </p> 
+                    </header>
+               <!--Navigation bar-->
+                <ul id ="navbar">
+                  <a href = "länk"> Boka biljett</a> 
+                  <a href = "index.html"> Filmschema </a>
+                  <a href = "addmovie.html"> Lägg till film </a>
+                  <ul style="float:right;list-style-type:none;">
+                       <a href = "länk "> Konto</a>
+                       <a href="länk"> Logga in</a>
+                  </ul>       
+          </div>
+
+           <div id="bottom">
+               <!--calendar-->
+                <p>Datum: <input type="text" id="datepicker"></p>
+                 
+               <!--pics-->
+                <div class ="imgClass"> 
+                    <img id ="img" src ="https://upload.wikimedia.org/wikipedia/en/7/7a/Straight_Outta_Compton_poster.jpg" alt="first">
+                    <img id ="img" src="https://upload.wikimedia.org/wikipedia/en/0/02/My_Neighbor_Totoro_-_Tonari_no_Totoro_(Movie_Poster).jpg" alt="second">
+                    <img id ="img" src="https://www.ginza.se/Archive/Images/item_img_verylarge/311426.jpg" alt="third">
+                    <img id ="img" src="http://image.tmdb.org/t/p/original/vOipe2myi26UDwP978hsYOrnUWC.jpg" alt ="forth">
+                    <img id ="img" src="http://ecx.images-amazon.com/images/I/518C29DQT0L.jpg" alt="fifth">
+                    <img id ="img" src="http://4.bp.blogspot.com/-fI1DBQuZIoI/U9Uszeki_jI/AAAAAAAACPc/TnDC2R2VxW0/s1600/mln.jpg" alt="sixt ">
+                    <img id ="img" src="https://mz-prod.s3.amazonaws.com/uploads/photo/file/69766/small_original.jpg" alt = "seventh ">
+                    <img id ="img" src="https://jessmarstonmediablog.files.wordpress.com/2011/10/titanic1.jpg" alt="eigth ">
+              
+               </div>        
+           </div>
+         </div>
+    </body>
+</html>
